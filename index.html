@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#080808">
+<title>Azad Nagar Fight Club</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <a class="logo" href="#home"><span>AZAD NAGAR</span><b>FIGHT CLUB</b></a>
+  <button class="menu" onclick="toggleMenu()">☰</button>
+  <nav id="nav">
+    <a href="#home">Home</a><a href="#fighters">Fighters</a><a href="#matches">Matches</a>
+    <a href="#results">Results</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-content">
+    <p class="tag">DISCIPLINE • RESPECT • FIGHT</p>
+    <h1>AZAD NAGAR<br><em>FIGHT CLUB</em></h1>
+    <p class="lead">Meet our fighters. Follow their journey. Never miss a match.</p>
+    <a class="btn" href="#fighters">Meet The Fighters →</a>
+  </div>
+</section>
+
+<section class="intro">
+  <div><span class="red">THE CLUB</span><h2>Fighters who step into the ring with purpose.</h2></div>
+  <p>Azad Nagar Fight Club is a community of dedicated fighters and boxers. Explore fighter profiles, upcoming bouts and past results — all in one place.</p>
+</section>
+
+<section id="fighters" class="section">
+  <div class="section-head"><div><span class="red">OUR TEAM</span><h2>Fighters & Boxers</h2></div><span id="fighterCount" class="count"></span></div>
+  <div id="fighterGrid" class="fighter-grid"></div>
+</section>
+
+<section id="matches" class="section dark-section">
+  <div class="section-head"><div><span class="red">NEXT UP</span><h2>Upcoming Matches</h2></div></div>
+  <div id="matchList" class="match-list"></div>
+</section>
+
+<section id="results" class="section">
+  <div class="section-head"><div><span class="red">FIGHT HISTORY</span><h2>Recent Results</h2></div></div>
+  <div id="resultList" class="result-list"></div>
+</section>
+
+<section id="gallery" class="section dark-section">
+  <div class="section-head"><div><span class="red">INSIDE THE CLUB</span><h2>Gallery</h2></div></div>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=900&q=85" alt="Boxing training">
+    <img src="https://images.unsplash.com/photo-1555597673-b21d5c935865?auto=format&fit=crop&w=900&q=85" alt="Fighter training">
+    <img src="https://images.unsplash.com/photo-1591117207239-788bf8de4d30?auto=format&fit=crop&w=900&q=85" alt="Kickboxing">
+    <img src="https://images.unsplash.com/photo-1584467735871-7c4e4f5f4f8b?auto=format&fit=crop&w=900&q=85" alt="Fight club">
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div><span class="red">FIND US</span><h2>Azad Nagar Fight Club</h2><p>Come watch, train and support the fighters.</p></div>
+  <div class="contact-info">
+    <p>📍 <b>Location</b><br>Azad Nagar, Near Main Road, India</p>
+    <p>📞 <b>Phone / WhatsApp</b><br>+91 98765 43210</p>
+    <p>✉️ <b>Email</b><br>azadnagarfightclub@gmail.com</p>
+  </div>
+</section>
+</main>
+
+<footer><div class="logo"><span>AZAD NAGAR</span><b>FIGHT CLUB</b></div><p>© 2026 Azad Nagar Fight Club. All rights reserved.</p></footer>
+<script src="app.js"></script>
+</body>
+</html>
