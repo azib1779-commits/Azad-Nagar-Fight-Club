@@ -84,9 +84,10 @@ body:after{
   padding:90px 8%;
   position:relative;isolation:isolate;overflow:hidden;
   background:
-    linear-gradient(90deg,rgba(3,5,8,.98) 0%,rgba(3,5,8,.88) 42%,rgba(3,5,8,.28) 100%),
-    linear-gradient(0deg,rgba(3,5,8,.55),transparent 45%),
-    url("azib-khan.png") 72% center/cover no-repeat;
+    linear-gradient(90deg,rgba(3,5,8,.82) 0%,rgba(3,5,8,.42) 46%,rgba(3,5,8,.18) 100%),
+    linear-gradient(0deg,rgba(3,5,8,.62),rgba(3,5,8,.08) 55%,rgba(3,5,8,.28) 100%),
+    url("hero-group.jpg") center center/contain no-repeat,
+    #030508;
 }
 .hero:before{
   content:"";position:absolute;inset:0;z-index:-1;
