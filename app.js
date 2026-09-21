@@ -11,12 +11,12 @@ const fighters = [
 ];
 
 const matches = [
-  {day:"13",month:"SEP",year:"2026",status:"COMPLETED"},
-  {day:"16",month:"SEP",year:"2026",status:"COMPLETED"},
-  {day:"19",month:"SEP",year:"2026",status:"COMPLETED"},
-  {day:"28",month:"SEP",year:"2026",status:"COMING"},
-  {day:"12",month:"OCT",year:"2026",status:"COMING"},
-  {day:"18",month:"OCT",year:"2026",status:"COMING"}
+  {day:"13",month:"SEP",year:"2026",status:"COMPLETED",fighter1:"",fighter2:""},
+  {day:"16",month:"SEP",year:"2026",status:"COMPLETED",fighter1:"",fighter2:""},
+  {day:"19",month:"SEP",year:"2026",status:"COMPLETED",fighter1:"",fighter2:""},
+  {day:"28",month:"SEP",year:"2026",status:"COMING",fighter1:"Mohd Ammar",fighter2:"Mohd Ibrahim"},
+  {day:"12",month:"OCT",year:"2026",status:"COMING",fighter1:"Mohd Affan",fighter2:"Ammar Khan"},
+  {day:"18",month:"OCT",year:"2026",status:"COMING",fighter1:"Mohd Hamja",fighter2:"Dr Arsh"}
 ];
 
 const fighterCount = document.getElementById("fighterCount");
@@ -54,7 +54,7 @@ if (matchList) {
       </div>
       <div class="match-info">
         <span class="style">AZAD NAGAR FIGHT CLUB</span>
-        <h3>Fight Club Match</h3>
+        <h3>${m.fighter1 ? m.fighter1 + " VS " + m.fighter2 : "Fight Club Match"}</h3>
       </div>
       <span class="status ${m.status === "COMING" ? "upcoming" : "completed"}">
         ${m.status === "COMING" ? "UPCOMING" : "COMPLETED"}
